@@ -8,7 +8,7 @@ namespace Library.Infraestructure.Shared
     public abstract class GenericRepositoryContext : DbContext
     {
 
-        public GenericRepositoryContext(DbContextOptions<GenericRepositoryContext> options) : base(options)
+        public GenericRepositoryContext(DbContextOptions options) : base(options)
         {
         }
 
