@@ -9,7 +9,6 @@ namespace Library.Domain
         [Key]
         public int Id { get; set; }
 
-
         [Required]
         public string Title { get; set; }
 
@@ -18,7 +17,6 @@ namespace Library.Domain
 
         [Required]
         public string isBN { get; set; }
-
 
         public virtual ICollection<Page> Pages { get; set; }
 

@@ -10,6 +10,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Application.Shared\Library.Application.Shared.csproj" />
+    <ProjectReference Include="..\Library.Application\Library.Application.csproj" />
+    <ProjectReference Include="..\Library.EntityFramework\Library.EntityFramework.csproj" />
+    <ProjectReference Include="..\Library.Infraestructure\Library.Infraestructure.csproj" />
   </ItemGroup>
 
 </Project>
