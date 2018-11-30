@@ -1,0 +1,2 @@
+# Library
+Library REST API el cuál permita sus clientes consumir el listado de libros disponibles, así como también, leer dichos libros página por página en el formato deseado. Para esta primera iteración los libros estarán disponibles (página por página) en texto plano y HTML. En próximas iteraciones se agregará soporte para más formatos de lectura, y además, se agregará soporte para interconectarse con otros servicios proveedores de libros en línea.
