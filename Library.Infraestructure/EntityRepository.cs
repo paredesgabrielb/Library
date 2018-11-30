@@ -1,4 +1,5 @@
-﻿using Library.Infraestructure.Abstractions;
+﻿using Library.Domain.Shared;
+using Library.Infraestructure.Abstractions;
 using Library.Infraestructure.Base;
 using Library.Infraestructure.Shared;
 using Microsoft.EntityFrameworkCore;

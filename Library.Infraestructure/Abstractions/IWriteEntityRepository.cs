@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Library.Infraestructure.Shared;
+using Library.Domain.Shared;
 
 namespace Library.Infraestructure.Abstractions
 {

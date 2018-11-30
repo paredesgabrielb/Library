@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Library.Infraestructure.Shared;
+using Library.Domain.Shared;
 
 namespace Library.Infraestructure.Abstractions
 {
