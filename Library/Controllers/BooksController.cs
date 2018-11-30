@@ -15,18 +15,18 @@ namespace Library.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly IBookAppServices _context;
+        private readonly IBookAppServices _bookAppServices;
 
         public BooksController(IBookAppServices context)
         {
-            _context = context;
+            _bookAppServices = context;
         }
 
         // GET: api/Books
         [HttpGet]
         public async Task<IEnumerable<Book>> GetBooks()
         {
-            return await _context.GetAllBooks();
+            return await _bookAppServices.GetAllBooks();
         }
 
         //// GET: api/Books/5
@@ -38,7 +38,7 @@ namespace Library.Controllers
         //        return BadRequest(ModelState);
         //    }
 
-        //    var book = await _context.Books.FindAsync(id);
+        //    var book = await _bookAppServices.Books.FindAsync(id);
 
         //    if (book == null)
         //    {
@@ -62,11 +62,11 @@ namespace Library.Controllers
         //        return BadRequest();
         //    }
 
-        //    _context.Entry(book).State = EntityState.Modified;
+        //    _bookAppServices.Entry(book).State = EntityState.Modified;
 
         //    try
         //    {
-        //        await _context.SaveChangesAsync();
+        //        await _bookAppServices.SaveChangesAsync();
         //    }
         //    catch (DbUpdateConcurrencyException)
         //    {
@@ -92,8 +92,8 @@ namespace Library.Controllers
         //        return BadRequest(ModelState);
         //    }
 
-        //    _context.Books.Add(book);
-        //    await _context.SaveChangesAsync();
+        //    _bookAppServices.Books.Add(book);
+        //    await _bookAppServices.SaveChangesAsync();
 
         //    return CreatedAtAction("GetBook", new { id = book.Id }, book);
         //}
@@ -107,21 +107,21 @@ namespace Library.Controllers
         //        return BadRequest(ModelState);
         //    }
 
-        //    var book = await _context.Books.FindAsync(id);
+        //    var book = await _bookAppServices.Books.FindAsync(id);
         //    if (book == null)
         //    {
         //        return NotFound();
         //    }
 
-        //    _context.Books.Remove(book);
-        //    await _context.SaveChangesAsync();
+        //    _bookAppServices.Books.Remove(book);
+        //    await _bookAppServices.SaveChangesAsync();
 
         //    return Ok(book);
         //}
 
         //private bool BookExists(int id)
         //{
-        //    return _context.Books.Any(e => e.Id == id);
+        //    return _bookAppServices.Books.Any(e => e.Id == id);
         //}
     }
 }

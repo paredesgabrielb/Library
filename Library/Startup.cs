@@ -31,6 +31,7 @@ namespace Library
             services.AddTransient<GenericRepositoryContext, LibraryDbContext>();
             services.AddTransient(typeof(IEntityRepository<,>), typeof(EntityRepository<,>));
             services.AddTransient(typeof(IBookAppServices), typeof(BookAppServices));
+            services.AddTransient(typeof(IPageAppServices), typeof(PageAppServices));
 
             services.AddDbContext<LibraryDbContext>(options =>
             {
